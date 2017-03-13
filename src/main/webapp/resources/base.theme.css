@@ -1,0 +1,170 @@
+@import "base.reboot.min.css";
+
+html,
+body {
+	display: block; position: relative;
+	margin: 0; padding: 0;}
+
+body {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px; line-height: 20px; 
+	font-weight: normal; color: #333333;
+	padding: 50px 15px;
+	background: #ffffff;}	
+a,
+a:hover,
+a:focus {
+	text-decoration: none;}
+a {
+	color: #1ba8ed;}
+a:hover,
+a:focus {
+	color: #18303d;}
+	
+.wrapper {
+	display: block; position: relative;
+	margin: 0 auto; padding: 0;
+	width: 960px;}
+
+.header {
+	display: block; 
+	margin: -50px -15px 100px -15px; padding: 100px 0;
+	background: #9aca40;}
+.header h1 {
+	display: block; 
+	margin: 0; padding: 0;
+	font-size: 50px; line-height: 60px; font-weight: normal; color: rgba(255,255,255,1);}
+.header p {
+	display: block; 
+	margin: 15px 0 0 0; padding: 0;
+	font-size: 16px; line-height: 20px; font-weight: normal; color: rgba(255,255,255,.75);}
+
+	
+	
+.search {
+	display: block; position: relative;
+	margin: 0 0 50px 0; padding: 0;}
+.search .form {
+	display: block; position: relative; z-index: 1;
+	margin: 0 200px 0 0; padding: 0;}
+.search .form input[type=text] {
+	display: block; position: relative; z-index: 1;
+	margin: 0; padding: 15px 20px;
+	width: 100%;
+	background: #f9f9f9;
+	border: 1px solid #dbdcde;}
+.search .clear {
+	display: block; position: absolute; z-index: 2;
+	top: 0; right: 0;}
+.search input[type=submit] {
+	display: block; position: absolute; z-index: 2;
+	margin: 0; padding: 15px 20px;
+	top: 0; right: 0;
+	background: #f9f9f9;
+	border: 1px solid #dbdcde;
+	cursor: pointer;}
+.search input[type=submit]:hover,
+.search input[type=submit]:focus {
+	color: #ffffff;
+	border-color: #36bc74;
+	background: #36bc74;}
+	
+
+.table {
+	margin: 0; apdding: 0;
+	width: 100%;}
+.table thead tr td,
+.table tbody tr td,
+.table tfoot tr td {
+	position: relative;
+	padding: 10px 15px;}
+	
+.table thead tr td {
+	padding: 15px;
+	color: #ffffff;
+	background: #18303d;}
+	
+.table tbody tr td {
+	height: 40px;}	
+.table tbody tr:nth-of-type(even) td {
+	background: #f3f3f3;}
+.table tbody tr:hover td,
+.table tbody tr:focus td {
+	background: #dbdcde;}
+	
+.table tbody tr td input {
+	display: block; position: absolute;
+	left: 5px; right: 5px; top: 5px; bottom: 5px;
+	width: 90px;
+	margin: 0; padding: 5px 10px;
+	font-size: 12px; font-weight: bold; color: #333333;
+	text-align: center;
+	border: 1px solid #c2c5cb;
+	background: #c2c5cb;
+	cursor: pointer;}
+.table tbody tr td input:hover,
+.table tbody tr td input:focus {
+	color: rgba(255,255,255,1);
+	border-color: #f35800;
+	background: #f35800;}
+
+.table tbody tr td.user-add {
+	background: #ffffff;}
+.table tbody tr td.user-add input {
+	width: 950px;}
+	
+.table tfoot tr td {
+	text-align: center;
+	padding-top: 50px;}
+.table tfoot tr td ul,
+.table tfoot tr td ul li {
+	display: inline-block;
+	margin: 0; padding: 0;
+	list-style: none;}
+.table tfoot tr td ul {
+	margin: 0 auto;}
+.table tfoot tr td ul li {
+	float: left;}
+.table tfoot tr td ul li a {
+	display: block;
+	margin: 0; padding: 5px 10px;}
+	
+.table tbody tr td,
+.table tbody tr td input,
+.search input[type=submit] {
+	-webkit-transition: all .2s ease;
+	-o-transition: 		all .2s ease;
+	transition: 		all .2s ease;}
+	
+	
+	
+	
+.modal {
+	display: none; position: fixed; z-index: 999;
+	left: 50%; top: 50%;
+	margin: -100px 0 0 -300px; padding: 0;
+	width: 600px; height: 200px;
+	border: 2px solid #eeeeee;
+	background: #ffffff;}
+.modal #closeButton {
+	display: block; position: absolute; z-index: 2;
+	right: -30px; top: 10px;
+	width: 30px; height: 30px;
+	font-size: 12px; line-height: 30px; 
+	text-align: center;
+	color: #ffffff;
+	background: #18303d;
+	cursor: pointer;
+	-webkit-transition: all .2s ease;
+	-o-transition: 		all .2s ease;
+	transition: 		all .2s ease;}
+.modal #closeButton:hover,
+.modal #closeButton:focus {
+	background: #9aca40;}
+.modal iframe {
+	display: block; position: absolute; z-index: 1;
+	left: 10px; right: 10px; top: 10px; bottom: 10px;
+	width: 580px; height: 180px;
+	border: 0;}
+	
+	
